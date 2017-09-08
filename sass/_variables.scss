@@ -1,0 +1,19 @@
+$white: #ffffff;
+$whiteSmoke: #eff2f6;
+$black: #000000;
+$grey: #98a6aa;
+$greyBlack: #232323;
+$red: #ff343d;
+
+
+$colors: ('white', 'whiteSmoke', 'black', 'grey', 'greyBlack', 'red');
+$code:  ($white, $whiteSmoke, $black, $grey, $greyBlack, $red);
+$i: 1;
+
+@each $color in $colors {
+  .basic__#{$color} {
+    color: nth($code, $i);
+  }
+
+  $i: $i + 1;
+}

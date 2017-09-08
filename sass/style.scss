@@ -1,0 +1,335 @@
+@import "mixins";
+@import "variables";
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+.swiper-container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.section__1 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+
+  .header-left {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: $whiteSmoke;
+    padding-left: 8%;
+
+    div {
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        padding: 5% 5%;
+        color: $grey;
+      }
+
+      .header-left-logo {
+        margin-top: 4%;
+      }
+
+      &.header-left-catch {
+        width: 40%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+
+    .header__title {
+      font-size: 3.5em;
+      font-weight: lighter;
+    }
+
+    .header__catchPhrase {
+      padding: 25px 0;
+    }
+
+    .header__leftScroll{
+        padding-bottom: 100px;
+
+        a {
+          text-decoration: none;
+          color: $greyBlack;
+        }
+    }
+
+    .slide__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header__button {
+      @include btnRotate(-90deg);
+
+      margin: 0;
+    }
+
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background: url('../img/red_mars_background.png');
+
+    span {
+      display: flex;
+      justify-content: flex-end;
+      padding: 8% 20%;
+      color: $white;
+    }
+
+    :nth-child(2) {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      .header-drone {
+        width: 130%;
+        height: auto;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+}
+
+.section__2 {
+  height: 50vh;
+  display: flex;
+
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+  .tap__toFly {
+    @include flexCenter();
+
+    flex-basis: 30%;
+    height: 100%;
+    background-color: #f8f9fb;
+    background-image: url('../img/drone_tapTOfly.png'), url('../img/circle.png');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center left, center right;
+  }
+
+  .fly__higher {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #f8f9fb;
+    background-image: url('../img/fly_higher.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .fly__higher--overlay {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-basis: 43%;
+
+      height: 100%;
+      background-color: rgba(0, 0, 0, .8);
+
+      h2{
+        color: $white;
+        padding-left: 20%;
+      }
+    }
+
+    .flyHigher__button {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 100px;
+
+      .fly__higher--rotate {
+        @include btnDim($white, $black, $white);
+        @include btnHover($white, $white, transparent);
+        @include btnRotate(-90deg);
+        align-self: center;
+      }
+    }
+  }
+}
+
+.section__3 {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+}
+
+.features__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+
+}
+
+.features__item {
+  @include flexCenter();
+  flex-direction: column;
+}
+
+.section__4 {
+  height: 65vh;
+  display: flex;
+}
+
+.generation__leftBackground {
+  flex-basis: 48%;
+  background-image: url('../img/generation.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.generation__rightText {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $greyBlack;
+  padding-left: 100px;
+
+  background-image: url('../img/drone_icon.png');
+  background-size: 30%;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  h2 {
+    color: $white;
+    font-size: 5.5em;
+    font-weight: 100;
+    margin-bottom: 0.4em;
+  }
+}
+.generation__btn {
+  @include btnDim($grey, $white, transparent);
+  @include btnHover($white, $greyBlack, $white);
+
+  max-width: 156px;
+}
+
+.section__5 {
+  height: 80vh;
+  width: 100%;
+  background-image: url('../img/flying_drone.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: center right;
+}
+
+.flying {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+
+  h2 {
+    color: $black;
+    font-size: 5.5em;
+    font-weight: 100;
+    margin-bottom: 0.4em;
+  }
+}
+
+.flying__btn {
+  @include btnDim($black, $black, transparent);
+  @include btnHover($black, $white, $black);
+  max-width: 156px;
+}
+
+.section__6 {
+  flex-grow: 1;
+  height: 100vh;
+
+  background-image: url('../img/start.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.start__phrase {
+  @include flexCenterBottom();
+
+  width: 100%;
+  height: 80%;
+}
+
+.start__title {
+  font-size: 5.5em;
+}
+
+.start__btn {
+  @include btnDim($white, #318f76, $white);
+  @include btnHover($white, $white, transparent);
+  max-width: 156px;
+}
+
+.section__7 {
+  @include flexCenter();
+
+  flex-grow: 1;
+  height: 40vh;
+  background-color: $white;
+
+  background-image: url('../img/phantom.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__phrase {
+  @include flexCenter();
+
+  flex-direction: column;
+}

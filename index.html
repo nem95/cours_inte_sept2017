@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section class="section__1 header">
+        <div class="header-left">
+          <div class="">
+            <img src="img/logo.png" alt="" class="header-left-logo">
+            <span class="header-left-phoneNumber">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              +48 604 300 500
+            </span>
+          </div>
+
+          <div class="header-left-catch">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slide__item">
+                        <h1 class="header__title">PHANTOM</h1>
+                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="slide__item">
+                        <h1 class="header__title">PHANTOM</h1>
+                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="slide__item">
+                        <h1 class="header__title">PHANTOM</h1>
+                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="slide__item">
+                        <h1 class="header__title">PHANTOM</h1>
+                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="slide__item">
+                        <h1 class="header__title">PHANTOM</h1>
+                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                      </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="header__leftScroll">
+            <a href="#" class="scrollDown">
+              <p class="header__button">Scroll down</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="header-right">
+          <span>
+            <p>BUY NOW <i class="fa fa-bars" aria-hidden="true"></i></p>
+          </span>
+
+          <div class="">
+            <img src="img/drone.png" alt="" class="header-drone">
+          </div>
+        </div>
+      </section>
+
+      <section class="section__2">
+        <div class="tap__toFly">
+          <div class="">
+            <h2>Tap to fly</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="fly__higher">
+          <div class="fly__higher--overlay">
+            <h2>Fly higher <br> than before</h2>
+          </div>
+
+          <div class="flyHigher__button">
+            <button type="button" name="button" class="fly__higher--rotate">VIEW MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__3 features">
+        <div>
+          <h3>Features</h3>
+        </div>
+
+        <div class="features__items">
+          <div class="features__item">
+            <img src="img/technology.png" alt="">
+            <p>New technology</p>
+          </div>
+
+          <div class="features__item">
+            <img src="img/signal.png" alt="">
+            <p>Good signal</p>
+          </div>
+
+          <div class="features__item">
+            <img src="img/easy_use.png" alt="">
+            <p>Easy to use</p>
+          </div>
+
+          <div class="features__item">
+            <img src="img/visibility.png" alt="">
+            <p>Visibility</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__4 generation">
+        <div class="generation__leftBackground"></div>
+
+        <div class="generation__rightText">
+          <h2>
+            New <span class="basic__red">generation</span> <br>
+            of vision<span class="basic__red">.</span>
+           </h2>
+
+           <button type="button" name="button" class="generation__btn">VIEW MORE</button>
+        </div>
+      </section>
+
+      <section class="section__5 fly">
+        <div class="flying">
+          <h2>
+            New <span class="basic__red">generation</span> <br>
+            of flying<span class="basic__red">.</span>
+           </h2>
+
+           <button type="button" name="button" class="flying__btn">VIEW MORE</button>
+        </div>
+      </section>
+
+      <section class="section__6 start">
+        <div class="start__phrase">
+          <h2 class="start__title basic__white"> Start your journey </h2>
+
+           <button type="button" name="button" class="start__btn">VIEW MORE</button>
+        </div>
+      </section>
+
+      <section class="section__7 footer">
+        <div class="footer__phrase">
+          <img src="img/logo.png" alt="" class="header-left-logo">
+
+          <p class="footeer__copy basic__grey"> 2016 Copyright. All rights reserved by Symu.co </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        loop: true
+
+    });
+    </script>
+  </body>
+</html>
