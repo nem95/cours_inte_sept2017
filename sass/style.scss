@@ -31,99 +31,134 @@ h1 {
     -webkit-align-items: center;
     align-items: center;
 }
-
+.header__menuuu {
+  display: none;
+}
 .section__1 {
   height: 100vh;
   display: flex;
   justify-content: space-between;
 
-  .header-left {
+  .header__left {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     background-color: $whiteSmoke;
     padding-left: 8%;
-
-    div {
-      display: flex;
-      align-items: flex-start;
-
-      span {
-        padding: 5% 5%;
-        color: $grey;
-      }
-
-      .header-left-logo {
-        margin-top: 4%;
-      }
-
-      &.header-left-catch {
-        width: 40%;
-        display: flex;
-        flex-grow: 1;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-      }
-    }
-
-    .header__title {
-      font-size: 3.5em;
-      font-weight: lighter;
-    }
-
-    .header__catchPhrase {
-      padding: 25px 0;
-    }
-
-    .header__leftScroll{
-        padding-bottom: 100px;
-
-        a {
-          text-decoration: none;
-          color: $greyBlack;
-        }
-    }
-
-    .slide__item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header__button {
-      @include btnRotate(-90deg);
-
-      margin: 0;
-    }
-
   }
 
-  .header-right {
+  span {
+    padding: 5% 5%;
+    color: $grey;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header__leftLogo {
+    margin-top: 4%;
+  }
+
+  .header__phoneNumber {
+    flex-grow: 1;
+    padding: 5% 0 0 5%;
+    color: $grey;
+  }
+
+  .header__leftSlider {
+    width: 40%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .swiper-wrapper {
+    margin-left: 20%;
+    max-width: 80%;
+  }
+
+  .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin-bottom: 15px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $red;
+  }
+
+  .slide__item {
+    display: flex;
+    flex-direction: column;
+    background-color: $whiteSmoke;
+  }
+
+  .header__title {
+    font-size: 3.5em;
+    font-weight: lighter;
+  }
+
+  .header__catchPhrase {
+    padding: 25px 0;
+  }
+
+  .header__leftScroll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+
+  .scrollDown {
+    @include btnRotate(-90deg);
+    transform-origin: 0;
+
+    text-decoration: none;
+    color: $greyBlack;
+  }
+
+  .header__button {
+    margin: 0;
+  }
+
+  .header__right {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
     background: url('../img/red_mars_background.png');
-
-    span {
-      display: flex;
-      justify-content: flex-end;
-      padding: 8% 20%;
-      color: $white;
-    }
-
-    :nth-child(2) {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-
-      .header-drone {
-        width: 130%;
-        height: auto;
-        transform: translateX(-50%);
-      }
-    }
   }
 
+  .header__buy {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8% 20% 0 0;
+    color: $white;
+  }
+
+  .header__buyNow {
+    margin: 0;
+  }
+
+  .header__burger {
+    margin-left: 15%;
+  }
+
+  .header__rightDrone {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .header-drone {
+      width: 130%;
+      height: auto;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .section__2 {
@@ -138,7 +173,7 @@ h1 {
   .tap__toFly {
     @include flexCenter();
 
-    flex-basis: 30%;
+    width: 30%;
     height: 100%;
     background-color: #f8f9fb;
     background-image: url('../img/drone_tapTOfly.png'), url('../img/circle.png');
@@ -155,36 +190,37 @@ h1 {
     background-image: url('../img/fly_higher.png');
     background-size: cover;
     background-repeat: no-repeat;
+  }
 
-    .fly__higher--overlay {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-basis: 43%;
+  .fly__higher--overlay {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 43%;
 
-      height: 100%;
-      background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
 
-      h2{
-        color: $white;
-        padding-left: 20%;
-      }
-    }
-
-    .flyHigher__button {
-      display: flex;
+    h2{
+      color: $white;
+      padding-left: 20%;
       flex-grow: 1;
-      justify-content: flex-end;
-      align-items: flex-end;
-      padding-right: 100px;
-
-      .fly__higher--rotate {
-        @include btnDim($white, $black, $white);
-        @include btnHover($white, $white, transparent);
-        @include btnRotate(-90deg);
-        align-self: center;
-      }
     }
+  }
+
+  .flyHigher__button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 100px;
+  }
+
+  .fly__higher--rotate {
+    @include btnDim($white, $black, $white);
+    @include btnHover($white, $white, transparent);
+    @include btnRotate(-90deg);
+    align-self: center;
   }
 }
 
@@ -252,6 +288,7 @@ h1 {
     margin-bottom: 0.4em;
   }
 }
+
 .generation__btn {
   @include btnDim($grey, $white, transparent);
   @include btnHover($white, $greyBlack, $white);

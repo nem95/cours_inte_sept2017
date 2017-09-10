@@ -1,1 +1,1 @@
-hello,hello,hello,console.log("fff"),console.log("fff");
+document.querySelector(".hello").scrollIntoView({behavior:"smooth"});

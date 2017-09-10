@@ -2,66 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>flexbox</title>
 
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/small_desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
   <body>
     <main>
       <section class="section__1 header">
-        <div class="header-left">
-          <div class="">
-            <img src="img/logo.png" alt="" class="header-left-logo">
-            <span class="header-left-phoneNumber">
+        <div class="header__left">
+          <div class="header__logo">
+            <img src="img/logo.png" alt="" class="header__leftLogo">
+            <span class="header__phoneNumber">
               <i class="fa fa-phone" aria-hidden="true"></i>
               +48 604 300 500
             </span>
+
+            <i class="fa fa-bars fa-2x header__menuuu" aria-hidden="true"></i>
           </div>
 
-          <div class="header-left-catch">
+          <div class="header__leftSlider">
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="slide__item">
-                        <h1 class="header__title">PHANTOM</h1>
-                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
-                      </div>
-                    </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
 
-                    <div class="swiper-slide">
-                      <div class="slide__item">
-                        <h1 class="header__title">PHANTOM</h1>
-                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="slide__item">
-                        <h1 class="header__title">PHANTOM</h1>
-                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="slide__item">
-                        <h1 class="header__title">PHANTOM</h1>
-                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="slide__item">
-                        <h1 class="header__title">PHANTOM</h1>
-                        <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
-                      </div>
-                    </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide__item">
+                    <h1 class="header__title">PHANTOM</h1>
+                    <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                  </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+
+                <div class="swiper-slide">
+                  <div class="slide__item">
+                    <h1 class="header__title">hello</h1>
+                    <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide__item">
+                    <h1 class="header__title">POMME</h1>
+                    <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide__item">
+                    <h1 class="header__title">PHANTOM</h1>
+                    <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide__item">
+                    <h1 class="header__title">PHANTOM</h1>
+                    <span class="header__catchPhrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -73,12 +82,12 @@
 
         </div>
 
-        <div class="header-right">
-          <span>
-            <p>BUY NOW <i class="fa fa-bars" aria-hidden="true"></i></p>
+        <div class="header__right">
+          <span class="header__buy">
+            <p class="header__buyNow">BUY NOW</p><i class="fa fa-bars header__burger" aria-hidden="true"></i>
           </span>
 
-          <div class="">
+          <div class="header__rightDrone">
             <img src="img/drone.png" alt="" class="header-drone">
           </div>
         </div>
@@ -150,7 +159,7 @@
             of flying<span class="basic__red">.</span>
            </h2>
 
-           <button type="button" name="button" class="flying__btn">VIEW MORE</button>
+           <button type="button" name="button" class="flying__btn">PRODUCTS</button>
         </div>
       </section>
 
@@ -172,7 +181,7 @@
     </main>
 
     <!-- Swiper JS -->
-    <script src="js/swiper.min.js"></script>
+    <script src="js/dist/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -180,8 +189,8 @@
         pagination: '.swiper-pagination',
         paginationClickable: true,
         direction: 'vertical',
-        loop: true
-
+        loop: true,
+        effect: 'fade'
     });
     </script>
   </body>
