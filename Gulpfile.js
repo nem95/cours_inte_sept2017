@@ -6,10 +6,10 @@ let p = require('gulp-load-plugins')();
 const production = !!p.util.env.prod
 
 gulp.task('script', function () {
-  return gulp.src('js/*.js')
-        .pipe(p.concat('all.js'))
-        .pipe(p.uglify())
-        .pipe(gulp.dest('./js/dist'))
+  return gulp.src('./js/*.js')
+    .pipe(p.concat('all.js'))
+    .pipe(p.uglify())
+    .pipe(gulp.dest('./js/dist'));
 });
 
 gulp.task('sass', function () {

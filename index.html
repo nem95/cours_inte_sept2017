@@ -6,9 +6,7 @@
 
     <title>flexbox</title>
 
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/small_desktop.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -26,7 +24,9 @@
               +48 604 300 500
             </span>
 
-            <i class="fa fa-bars fa-2x header__menuuu" aria-hidden="true"></i>
+            <div class="header__menuuu">
+              <i class="fa fa-bars fa-2x header__menu" aria-hidden="true"></i>
+            </div>
           </div>
 
           <div class="header__leftSlider">
@@ -106,7 +106,7 @@
           </div>
 
           <div class="flyHigher__button">
-            <button type="button" name="button" class="fly__higher--rotate">VIEW MORE</button>
+            <button type="button" name="button" class="fly__higher--rotate view_button">VIEW MORE</button>
           </div>
         </div>
       </section>
@@ -148,7 +148,7 @@
             of vision<span class="basic__red">.</span>
            </h2>
 
-           <button type="button" name="button" class="generation__btn">VIEW MORE</button>
+           <button type="button" name="button" class="generation__btn view_button">VIEW MORE</button>
         </div>
       </section>
 
@@ -159,7 +159,7 @@
             of flying<span class="basic__red">.</span>
            </h2>
 
-           <button type="button" name="button" class="flying__btn">PRODUCTS</button>
+           <button type="button" name="button" class="flying__btn view_button">PRODUCTS</button>
         </div>
       </section>
 
@@ -167,7 +167,7 @@
         <div class="start__phrase">
           <h2 class="start__title basic__white"> Start your journey </h2>
 
-           <button type="button" name="button" class="start__btn">VIEW MORE</button>
+           <button type="button" name="button" class="start__btn view_button">VIEW MORE</button>
         </div>
       </section>
 
@@ -180,7 +180,11 @@
       </section>
     </main>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Swiper JS -->
+    <script src="js/dist/all.js"></script>
     <script src="js/dist/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->

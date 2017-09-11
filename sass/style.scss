@@ -1,5 +1,7 @@
 @import "mixins";
 @import "variables";
+@import "font-awesome";
+@import "swiper";
 
 body, html {
   height: 100%;
@@ -30,9 +32,6 @@ h1 {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-.header__menuuu {
-  display: none;
 }
 .section__1 {
   height: 100vh;
@@ -369,4 +368,13 @@ h1 {
   @include flexCenter();
 
   flex-direction: column;
+}
+
+.header__menuuu {
+  padding: 4% 5% 0 0;
+}
+@media screen and (min-width : 733px) {
+  .header__menuuu {
+    display: none;
+  }
 }
